@@ -14,4 +14,4 @@ jobs:
       - name: Create Directory
         run: mkdir actionsfolder
       - name: List files
-        run: ls
+        run: ls -lrt
