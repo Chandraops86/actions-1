@@ -8,10 +8,9 @@ jobs:
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v5
+      - name: List Files Before Run
+        run: ls -ltra
       - name: Install, Execute, Verify Cowsay
         run: |
-            sudo apt-get update && sudo apt-get install cowsay -y
-            cowsay -f dragon "Run for cover, I am a DRAGON....RAWR" >> dragon.txt
-            grep -i "dragon" dragon.txt
-            cat dragon.txt
-            ls -ltra
+            chmod +x ascii-script.sh
+            ./ascii-script.sh
