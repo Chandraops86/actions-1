@@ -13,3 +13,5 @@ jobs:
           cat README.md
           mkdir actionsfolder486
           ls -lrt
+      - name: Generate ASCII Artwork
+        run: cowsay -f dragon "Run for cover, I am a DRAGON....RAWR" >> dragon.txt
