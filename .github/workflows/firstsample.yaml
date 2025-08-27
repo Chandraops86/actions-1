@@ -7,11 +7,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v5
-      - name: Welcome message
-        run: echo "My first GitHub Actions Job"
-      - name: Read file
-        run: cat README.md
-      - name: Create Directory
-        run: mkdir actionsfolder
-      - name: List files
-        run: ls -lrt
+      - name: Welcome message and readfiles
+        run: |
+          echo "My first GitHub Actions Job"
+          cat README.md
+          mkdir actionsfolder486
+          ls -lrt
